@@ -19,7 +19,7 @@ public class NewOrderMain {
                     orderDispatcher.send("ECOMMERCE_NEW_ORDER", userId, order);
 
                     var email = "Thank you for your order! We are processing your order!";
-                    emailDispatcher.send("ECOMMERCE_NEW_ORDER", userId, new Email("other subject", email));
+                    emailDispatcher.send("ECOMMERCE_SEND_EMAIL", userId, new Email("other subject", email));
 
                 }
             }
